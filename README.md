@@ -1,2 +1,8 @@
 # OBISIP
 OASIS-INFOBYTE INTERNSHIP TASKS  |  LEVEL 2  |  WEB DEVELOPMENT AND DESIGNING | 
+ 
+# List of tasks
+a)
+b)
+c)
+d)
