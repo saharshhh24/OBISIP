@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Login Authentication System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <img src="background1.jpg" alt="background-image">
+    
+    <!-- Login Form -->
+    <div class="form" id="login-form">
+        <h1 class="form-title">Login</h1>
+        <div class="form-content">
+            <div class="form-box">
+                <i class="ri-user-3-line form-icon"></i>
+                <div class="form-box-input">
+                    <input type="email" class="form-input" id="login-email" required placeholder=" ">
+                    <label for="login-email" class="form-label">Email</label>
+                </div>
+            </div>
+            <div class="form-box">
+                <i class="ri-lock-2-line form-icon"></i>
+                <div class="form-box-input">
+                    <input type="password" class="form-input" id="login-pass" required placeholder=" ">
+                    <label for="login-pass" class="form-label">Password</label>
+                    <i class="ri-eye-off-line form-eye" id="login-eye"></i>
+                </div>
+            </div>
+        </div>
+        <div class="form-check">
+            <div class="form-check-group">
+                <input type="checkbox" class="form-check-input" class="form-check">
+                <label for="login-check" class="form-check-label">Remember Me</label>
+            </div>
+            <a href="#" class="form-forget">Forget Password?</a>
+        </div>
+        <button type="submit" class="form-button" id="login-button" onclick="handleLogin()">Login</button>
+        <p class="form-toggle">
+            Don't have an account? <a href="#" id="register-toggle">Register</a>
+        </p>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="form register-form" id="register-form">
+        <h1 class="form-title">Register</h1>
+        <div class="form-content">
+            <div class="form-box">
+                <i class="ri-user-3-line form-icon"></i>
+                <div class="form-box-input">
+                    <input type="text" class="form-input" id="register-username" required placeholder=" ">
+                    <label for="register-username" class="form-label">Username</label>
+                </div>
+            </div>
+            <div class="form-box">
+                <i class="ri-mail-line form-icon"></i>
+                <div class="form-box-input">
+                    <input type="email" class="form-input" id="register-email" required placeholder=" ">
+                    <label for="register-email" class="form-label">Email</label>
+                </div>
+            </div>
+            <div class="form-box">
+                <i class="ri-lock-2-line form-icon"></i>
+                <div class="form-box-input">
+                    <input type="password" class="form-input" id="register-pass" required placeholder=" ">
+                    <label for="register-pass" class="form-label">Password</label>
+                    <i class="ri-eye-off-line form-eye" id="register-eye"></i>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="form-button" id="register-button" onclick="handleRegistration()">Register</button>
+        <p class="form-toggle">
+            Already have an account? <a href="#" id="login-toggle">Login</a>
+        </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
 
